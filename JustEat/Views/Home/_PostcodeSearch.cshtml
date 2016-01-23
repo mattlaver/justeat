@@ -1,0 +1,14 @@
+﻿<div class="input-group">
+    <input type="text" id="postcode" class="form-control" placeholder="Enter Postcode">
+    <span class="input-group-btn">
+        <button id="searchRestaurants"  class="btn btn-default" type="button">Search</button>
+    </span>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#searchRestaurants').click(function () {
+            restaurantViewModel.restaurantListViewModel.getRestaurants($('#postcode').val());
+        });
+    });
+</script>

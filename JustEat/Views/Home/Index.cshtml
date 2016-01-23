@@ -1,0 +1,13 @@
+﻿@using System.Web.Optimization
+@Scripts.Render("~/bundles/restaurant")
+
+<h1>Search For Takeaway</h1>
+
+<div class="panel-body" data-bind="with: restaurantListViewModel">
+    @Html.Partial("_PostcodeSearch")
+</div>
+
+
+<div class="panel-body" data-bind="with: restaurantListViewModel">
+    @Html.Partial("_RestaurantList")
+</div>
